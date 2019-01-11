@@ -9,7 +9,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-    var output= a+ b;
+    var output= a + b;
     var message = 'The sum of ' + a + ' and ' + b + ' is ' + output +'.';
     return [output, message];
 }
@@ -28,8 +28,13 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-    var output = a * b;
+function multiply(a, b) { //eslint-disable-line 
+    var output = 0 ;
+    for( var i = 0; i < b ; i ++){          
+        output += a;
+//      console.log(i);
+//      console.log(output);
+    }
     var message = 'The product of ' + a + ' and ' + b + ' is ' + output + '.';
     return [output, message];
 }
@@ -52,7 +57,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+    
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
